@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sussurros Literários - Dom Casmurro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" class="img-header" />
+      </div>
+    </header>
+    <div class="container-aplicativo">
+      <div id="borda">
+        <img
+          src="./images/dom-casmurro.jpeg"
+          alt="Capa do livro Dom Casmurro"
+        />
+      </div>
+      <div id="informacoes-faixa">
+        <h3 id="capitulo">Capítulo 01</h3>
+        <p id="nome-autor">Machado de Assis</p>
+      </div>
+      <!-- Progresso do áudio -->
+      <input type="range" id="progress-bar" value="0" step="0.01" />
+      <div id="tempo"><span id="current-time">0:00</span> / <span id="duration">0:00</span></div>
+      <!--  -->
+      <audio id="audio-capitulo" src="./books/dom-casmurro/1.mp3"></audio>
+      <div id="container-botoes">
+        <button id="anterior" class="bi bi-skip-backward-fill"></button>
+        <button id="play-pause" class="bi bi-play-circle-fill"></button>
+        <button id="proximo" class="bi bi-skip-forward-fill"></button>
+      </div>
+    </div>
+    <footer>
+      <p id="texto-rodape">
+        João Victor Amaral - 2024 - Intensivão de JavaScript - Hashtag
+        Treinamentos
+      </p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
